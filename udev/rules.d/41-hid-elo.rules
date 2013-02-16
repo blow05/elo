@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04e7", ATTRS{idProduct}=="0126", RUN+="/bin/sh /etc/udev/load_hid_multitouch.sh $env{ID_VENDOR_ID} $env{ID_MODEL_ID}" RUN+="/opt/elo/elo_input daemon"
