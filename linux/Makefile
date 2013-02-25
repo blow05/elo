@@ -18,7 +18,7 @@ CXXFLAGS = $(CFLAGS)
 COBJS     = hid-libusb.o
 CPPOBJS   = ../elo_input/elo_input.o
 OBJS      = $(COBJS) $(CPPOBJS)
-LIBS      = `pkg-config libusb-1.0 libudev --libs`
+LIBS      = `pkg-config libusb-1.0 libudev --libs` -pthread
 INCLUDES ?= -I../hidapi `pkg-config libusb-1.0 --cflags`
 
 
